@@ -1,0 +1,10 @@
+name: CI/CD Python 
+
+on: [push]
+  
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Hello World
+        run: python hello.py
