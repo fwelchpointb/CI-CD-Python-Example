@@ -3,8 +3,10 @@ name: CI/CD Python
 on: [push]
   
 jobs:
-  main:
+  hello:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
       - name: Run Hello World
         run: python ./hello.py
