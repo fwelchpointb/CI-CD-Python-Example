@@ -1,6 +1,10 @@
 name: CI/CD Python 
 
 on: [push]
+
+
+env:
+  ARTIFACT_NAME:    myartifact
   
 jobs:
   hello:
